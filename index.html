@@ -16,6 +16,7 @@
       min-height: 100vh;
       margin: 0;
       padding: 0;
+      flex-direction: column;
     }
     .container {
       background-color: #1a1a1a;
@@ -25,6 +26,7 @@
       max-width: 400px;
       width: 100%;
       text-align: center;
+      flex: 1;
     }
 
     /* Logo Styles */
@@ -85,6 +87,15 @@
     .privacy-link {
       color: #daa520;
       text-decoration: none;
+      margin-top: 20px;
+    }
+
+    /* Align the link at the bottom */
+    .privacy-container {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      text-align: center;
     }
   </style>
 </head>
@@ -118,9 +129,11 @@
 
   <!-- Privacy Note -->
   <p class="privacy-note">We respect your privacy. Your information will only be used for beta testing updates.</p>
+</div>
 
-  <!-- Privacy Policy Link -->
-  <p><a href="https://github.com/internationalink/internationalink.github.io/blob/main/International_Ink_Privacy_Policy.docx" class="privacy-link" target="_blank">Privacy Policy</a></p>
+<!-- Privacy Policy Link at the bottom -->
+<div class="privacy-container">
+  <a href="https://raw.githubusercontent.com/internationalink/internationalink.github.io/main/International_Ink_Privacy_Policy.docx" class="privacy-link" target="_blank">Privacy Policy</a>
 </div>
 
 </body>
